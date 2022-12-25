@@ -14,6 +14,7 @@ async function main() {
   await hre.run("verify:verify", {
     address: token.address,
     constructorArguments: [50],
+    contract: "contracts/OurToken.sol:OurToken"
   });
 }
 
